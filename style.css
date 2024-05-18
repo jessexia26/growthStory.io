@@ -19,12 +19,13 @@ body {
 section {
   height: 100vh;
   width: 100%;
-  font-size: 40px;
-  font-weight: 100;
+  font-size: 35px;
+  font-weight: 80;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  text-align: center;
 }
 
 section:nth-child(1) {
@@ -189,20 +190,31 @@ section:nth-child(11) {
   overflow: visible;
 }
 
-#pauseButton {
+
+.top-buttons {
   position: fixed;
   top: 10px;
-  left: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  color:transparent;
+  z-index: 1000;
+  background-color: transparent;
+  border: transparent;
+}
+
+.top-buttons button {
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.519);
-  color: #fff;
+  font-size: 9px;
+  background-color: #00000068;
+  color: white;
   border: none;
+  display: flex;
   border-radius: 5px;
   cursor: pointer;
   z-index: 1000;
   font-family: "Noto Serif SC", "Roboto Slab", serif;
 }
-
 
 h1   { font-size: 2.4rem; } /* =24px */
 

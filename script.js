@@ -16,7 +16,9 @@ $('a[href*=#]:not([href=#])').click(function() {
 
 const backgroundMusic = document.getElementById('backgroundMusic');
 const pauseButton = document.getElementById('pauseButton');
+const menuButton = document.getElementById('menu');
 let isPlaying = false;
+
 
 // 当用户点击页面的任何位置时，播放背景音乐
 document.body.addEventListener('click', () => {
@@ -38,6 +40,11 @@ pauseButton.addEventListener('click', (event) => {
     }
     isPlaying = !isPlaying;
 });
+
+menuButton.addEventListener('click', (event) =>  {
+      event.stopPropagation();
+      window.location.href = 'https://jessexia-0526.wixstudio.io/jesse/studio';
+    });
 
 
 $(document).ready(function() {
